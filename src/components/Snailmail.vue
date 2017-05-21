@@ -41,10 +41,10 @@
             },
             sendMessage: function(id) {
                 this.$store.dispatch('sendUserMessage', id);
-                this.messageStatus = '';
-                this.messageSent();
+                setTimeout(() => {this.messageSent();},1000);
             },
             messageSent: function() {
+                this.messageStatus = '';
                 setTimeout(() => {this.messageStatus = 'hide';}, 1500);
             }
         },
