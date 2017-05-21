@@ -1,7 +1,10 @@
 /* Global */
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 .header {
     text-align:center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
     font-weight:900;
     word-spacing:-2px;
 }
@@ -47,7 +50,7 @@
 }
 
 .contact-address {
-    font-family: cursive,  "Comic Sans MS", sans-serif;
+    font-family: cursive, "Comic Sans MS", sans-serif;
     font-weight:500;
     font-size:14pt;
     word-spacing:-2px;
