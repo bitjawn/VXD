@@ -44,7 +44,7 @@
                 setTimeout(() => {this.messageSent();},1000);
             },
             messageSent: function() {
-                this.messageStatus = '';
+                this.messageStatus = 'sent';
                 setTimeout(() => {this.messageStatus = 'hide';}, 1500);
             }
         },
@@ -62,5 +62,15 @@
         padding:5px;
         margin:5px;
         text-align:left;
+    }
+
+    .sent {
+        font-size: 24pt;
+        font-family: cursive, "Comic Sans MS", serif;
+        font-weight: bolder;
+        color:rgb(70,180,70);
+        background: rgb(240,245,240);
+        border:solid 1pt transparent;
+        border-radius: 10px;
     }
 </style>
