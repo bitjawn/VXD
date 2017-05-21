@@ -10,6 +10,7 @@
             </p>
         </div>
         <div class="container user-messages v-scroll">
+            <h3 :class="messageStatus">Message Sent</h3>
             <div class="message clearfix" v-for="message in messages">
                 <p><b>Sender: </b>{{message.name}}</br>
                 <b>Email: </b> {{message.email}}</br>
@@ -29,7 +30,8 @@
         data () {
             return {
                 title: 'Contact Us',
-                how: 'Via snail-mail or phone'
+                how: 'Via snail-mail or phone',
+                messageStatus: 'hide'
             }
         },
         methods: {
@@ -39,6 +41,11 @@
             },
             sendMessage: function(id) {
                 this.$store.dispatch('sendUserMessage', id);
+                this.messageStatus = '';
+                this.messageSent();
+            },
+            messageSent: function() {
+                setTimeout(() => {this.messageStatus = 'hide';}, 1500);
             }
         },
         computed: {

@@ -58,7 +58,7 @@ const actions = {
     //*
     sendUserMessage: ({commit}, payload) => {
         return new Promise((response, reject) => {
-            setTimeout(() => { commit('sendUserMessage');}, 500)
+            setTimeout(() => { commit('sendUserMessage');}, 300)
         })
     }//*/
 }
