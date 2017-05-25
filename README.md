@@ -16,6 +16,7 @@
 ```bash
 # Installation
 clone https://github.com/bitjawn/VXD.git or download the zip
+npm install
 
 # serve with hot reload at localhost:8080
 npm run dev or npm start
