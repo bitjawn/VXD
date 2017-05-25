@@ -7,6 +7,7 @@
     <li>NodeJS: 7.7.4</li>
     <li>NPM: 4.5.0</li>
     <li>Vue: 2.2.6</li>
+    <li>Vuex: 2.3.1</li>
     <li>Foundation: 6.3.1</li>
 </ul>
 
